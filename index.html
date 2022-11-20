@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/cb320406cb.js" crossorigin="anonymous"></script>
+    <script async defer src="scripts/script.js"></script>
+    <title>Andrew Barker Web Developer</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="widthControl flex-container" id="header">
+
+        <a href="#"><img id="logo" src="Images/Good_Logo_AJB.png" width="95" height="auto" alt="a logo comprised of the initials AJB within a diamond shape border"></a>
+
+<!-- primary nav bar -->
+    
+        <nav id="main-menu" aria-label="Main navigation">
+          <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+          <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">EXPERIENCE</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+
+<!-- media links -->
+    <div class="relativeContainer">
+        <nav class="widthControl" id="media-menu" aria-label="media links">
+            <button class="media-toggle" onclick="toggleMedia()">Media</button>
+            <ul class="mediaLogos">
+                <li><a href="https://github.com/AndrewJamesBarker"><img src="Images/github_logo.png" width="31" alt="github logo of alien cat"></a></li>
+                <li><a href="https://www.linkedin.com/in/andrew-james-barker-/"><img src="Images/LinkedIn.png" width="31" alt="Linked logo characters i n"></a></li>
+                <li><a href="https://twitter.com/abarkshighhorse"><img src="Images/twitter_logo.png" width="31" alt="twitter logo bird image"></a></li>
+                <li><a href="https://www.instagram.com/mus.art.barks/"><img src="Images/insta_logo.png" width="31" alt="instagram logo camera image"></a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- Hero -->
+
+    <main class="widthControl" id="main">
+        
+        <div  id="heroText">
+            <p>Hi, my name is</p><h2>Andrew Barker.</h2>
+            
+            <p>I’m a <span class="bolded">Web Development</span>
+            
+            student at Humber College. My portfolio is growing, and I’m looking for new things to build.</p>
+            <p>I love clean, intuitive designs and strive to create a seamless interactive experience.</p>
+        </div>
+        
+
+    <!-- slide display (learnt from W3)-->
+
+        <h3 class="widthControl" id="carouselHeader">JAVASCRIPT AND MORE!</h3>   
+
+        <!-- Slideshow container -->
+
+        <div class="slide-container widthControl">
+
+       
+
+<!-- previous button -->
+
+        <div class="widthControl">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        </div>
+
+         <!-- Images -->
+
+         <a href="#"><picture class="mySlides fade">
+            <source media="(min-width:480px)" srcset="Images/randonnumgencropped.png">
+            <source srcset="Images/passwordgenSmall.png">
+            <img class="responseImg" src="Images/randonnumgencropped.png" width="640" height="450" alt="dark blue and bright green password generating app">
+        </picture></a>
+    
+        <picture class="mySlides fade ">
+            <a href="#"><img class="responseImg" src="Images/blackjackcropped.png" width="640" height="450" alt="app for playing blackjack looks like a felt gaming table"></a>
+        </picture>
+    
+        <picture class="mySlides fade ">
+            <a href="#"><img class="responseImg" src="Images/blogscreenshot.png" width="640" height="450" alt="blog website about guitars"></a>
+        </picture>
+    
+        <!-- Next button -->
+       
+        <div>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    <!-- The dots/circles -->
+
+        <div class="widthControl" id="dotGroup">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        </div>
+    </main>
+    <!-- More portfolio examples -->
+
+        <div class="flex-container widthControl">
+        <div class="flex-item1">
+            <h3>INTERACTIVE TEXT-BASED GAMES!</h3>
+            <a href="#"><img class="responseImgFlex" src="Images/WhiteWitchIntro.png" width="640" height="450" alt="text game says do you want to play a game Y or N"></a>
+        </div>
+        <div class="flex-item2">
+            <h3>ANIMATION, ART, AND DESIGN!</h3>
+            <a href="#"><img class="responseImgFlex" src="Images/Animation_still.JPG" width="640" height="450" alt="yellow surreal drawing of a man eating the word poem"></a>
+        </div>
+        </div>
+        <div id="bigPortrait">
+            <img id="portraitImg" src="Images/MePhotoSarahC.jpg" width="965" alt="side view photograph of man (Andrew) with a brick background">
+        <div id="skillDescription">
+            <p> Finding the perfect balance between form and function is the core aim of my work.
+                My goal is to create a seamless relationship between the Frontend and Backend tenets of Web Development.
+                I want to create responsive, intuitive, and robust web applications using tools like HTML/HTML5, CSS, 
+                Javascript, React, C#, ASP.NET, PHP, and SQL.</p>
+        </div>
+        </div>
+    
+        <!-- Form -->
+        
+    <section class="widthControl">
+            <h4 id="form-headline">Let's make your vision a reality!</h4>
+            <form>
+            <div class="formFlexContainer">
+            <div class="formItem1">
+            <div class="flexContainer2">
+            <div class="colItem1">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fullName">
+            </div>
+            <div class="colItem2">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="fullName">
+            </div>
+            </div>
+            </div>
+            <div class="formItem2">
+                <textarea rows="5" cols="47" id="message" name="msg" placeholder="Introduce yourself."></textarea>
+            </div>
+            <div id="submitBtnDisplay">
+                <button class="btn submit-btn" type="submit" value="submit">Submit</button>
+            </div>
+            </form>
+            </div>
+    </section>   
+
+    <!-- Footer -->
+
+    <footer class="widthControl">
+        <nav id="footer-menu" aria-label="footer navigation">
+            <ul class="menuFooter">
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT</a></li>
+              <li><a href="#">EXPERIENCE</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="copywrite">
+        <p>All rights reserved © Andrew Barker 2022</p>
+        </div>  
+    </footer>
+</body>
+</html>
