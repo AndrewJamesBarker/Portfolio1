@@ -156,6 +156,7 @@ h2 {
 }
 
 h3 {
+    font-size: 1.25em;
     /* padding-right: 28px; */
     font-size: 17px;
     margin-top: 103px;
@@ -185,7 +186,8 @@ h4 {
     /* text-align: center; */
 }
 
-/* Slideshow container */
+/* Slideshow container its edited and adapted, 
+but I got a lot of it from w3 https://www.w3schools.com/howto/howto_js_slideshow.asp */
 
 .slide-container {
     padding: 0;
@@ -260,11 +262,11 @@ h4 {
 /* Fading animation */
 .fade {
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
 @keyframes fade {
-  from {opacity: .4}
+  from {opacity: .5}
   to {opacity: 1}
 }
 
@@ -355,6 +357,8 @@ h4 {
     flex: 1 0 0;
 }
 
+/* Form stuff */
+
 .formFlexContainer {
     gap: .6em;
     display: flex;
@@ -433,10 +437,10 @@ textarea {
     margin-right: 20px;
     float: right;
     
-    font-weight: 1em;
+    font-weight: 400;
     width: 120px;
     height: 30px;
-    border: 1px solid #52796F;
+    border: .8px solid #52796F;
     border-radius: 10px;
     background-color: #E4EBE0;
 }
