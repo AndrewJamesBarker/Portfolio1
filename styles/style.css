@@ -249,14 +249,14 @@ but I got a lot of it from w3 https://www.w3schools.com/howto/howto_js_slideshow
     height: 15px;
     width: 15px;
     margin: 12px 2px 0px 2px;
-    background-color: #bbb;
+    background-color: rgb(0, 0, 0);
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
     }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: #00a77d;
 }
 
 /* Fading animation */
@@ -301,6 +301,9 @@ but I got a lot of it from w3 https://www.w3schools.com/howto/howto_js_slideshow
     color: #E1EDD9;
     max-width: 70%;
     font-size: 1.375em;
+    line-height: 1.em;
+    padding: 12px;
+    letter-spacing: .07em;
 }
 
 #portraitImg {
@@ -554,6 +557,8 @@ textarea {
     /* text-align: center; */
     margin-left: auto;
     margin-right: auto;
+    padding: 12px;
+    line-height: 1.8em;
 }
 
 #main-menu ul li {
@@ -609,8 +614,8 @@ h3 {
     border: .7px solid #52796F;
     border-radius: 5px;
     display: block;
-    width: 45px;
-    height: 25px;
+    width: 70px;
+    height: 29px;
 }
 .media-toggle:hover {
     cursor: pointer;
