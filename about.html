@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- All Rights Reserved © Andrew Barker -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/cb320406cb.js" crossorigin="anonymous"></script>
+    <script async defer src="scripts/script.js"></script>
+    <title>Andrew Barker Web Developer</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header class="widthControl flex-container" id="header">
+
+        <a href="#"><img id="logo" src="Images/Good_Logo_AJB.png" width="95" height="140" alt="a logo comprised of the initials AJB within a diamond shape border"></a>
+
+<!-- primary nav bar -->
+    
+        <nav id="main-menu" aria-label="Main navigation">
+          <button class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></button>
+          <ul class="menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="#form-headline">CONTACT</a></li>
+          </ul>
+        </nav>
+        
+    </header>
+
+<!-- media links -->
+    <div class="relativeContainer">
+        <nav class="widthControl" id="media-menu" aria-label="media links">
+            <button class="media-toggle" onclick="toggleMedia()">Social/Git</button>
+            <ul class="mediaLogos">
+                <li><a href="https://github.com/AndrewJamesBarker"><img src="Images/github_logo.png" width="31" alt="github logo of alien cat"></a></li>
+                <li><a href="https://www.linkedin.com/in/andrew-james-barker-/"><img src="Images/LinkedIn.png" width="31" alt="Linked logo characters i n"></a></li>
+                <li><a href="https://twitter.com/abarkshighhorse"><img src="Images/twitter_logo.png" width="31" alt="twitter logo bird image"></a></li>
+                <li><a href="https://www.instagram.com/mus.art.barks/"><img src="Images/insta_logo.png" width="31" alt="instagram logo camera image"></a></li>
+            </ul>
+        </nav>
+    </div>
+<!-- Hero -->
+
+    <main class="widthControl" >
+        
+        <div id="mainAbout">
+            <p>I’m a creative and passionate professional with experience in web development, graphic design/wireframing, pipe organ technician, and music performance. I have a strong work ethic and a talent for creative analytic problem-solving. These skills, paired with my previous work as a teacher and a technician, help me develop intuitive, user-friendly interfaces. I’m a lifelong learner.</p>
+
+            <p>I’m currently completing my graduate certificate in Web Development at Humber College and will have a broad entry-level full-stack skillset upon graduation. Some languages/applications I’m familiar with are HTML, CSS, JAVASCRIPT, C#/ASP.NET, SQL, REACT, PHP, and Github.</p>
+        </div>    
+
+        <!-- Form -->
+        
+    <section class="widthControl">
+            <h4 id="form-headline">Let's make your vision a reality!</h4>
+            <form name="contact" method="POST" data-netlify="true">
+            <div class="formFlexContainer">
+            <div class="formItem1">
+            <div class="flexContainer2">
+            <div class="colItem1">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fullName">
+            </div>
+            <div class="colItem2">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="fullName">
+            </div>
+            </div>
+            </div>
+            <div class="formItem2">
+                <textarea rows="5" cols="47" id="message" name="msg" placeholder="Introduce yourself."></textarea>
+            </div>
+            <div id="submitBtnDisplay">
+                <button class="btn submit-btn" type="submit" value="submit">Submit</button>
+            </div>
+           
+            </div>
+            </form>
+    </section>   
+
+    <!-- Footer -->
+
+    <footer class="widthControl">
+        <nav id="footer-menu" aria-label="footer navigation">
+            <ul class="menuFooter">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="experience.html">EXPERIENCE</a></li>
+                <li><a href="#form-headline">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div id="copywrite">
+        <p>All rights reserved © Andrew Barker 2023</p>
+        </div>  
+    </footer>
+</body>
+</html>
